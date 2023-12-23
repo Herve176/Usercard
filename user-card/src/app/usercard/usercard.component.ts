@@ -1,5 +1,6 @@
 import { Component ,OnInit, Input } from '@angular/core';
 import { Usercard } from '../models/usercard.models';
+
 @Component({
   selector: 'app-usercard',
   standalone: true,
