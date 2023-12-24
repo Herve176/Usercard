@@ -1,5 +1,10 @@
 <div class="usercard">
 <h1>{{ usercard.title }}</h1>
 <img [src]="usercard.image" alt="picture">
-<p>{{ usercard.description }}</p>
+<button (click)="tdescription()">Show details</button>
+<div *ngIf = "Showdetails">
+    <p>{{ usercard.description }}</p>
+</div>
+<div>
+    <p *ngIf="usercard.isvip === true">certified user</p></div>
 </div>

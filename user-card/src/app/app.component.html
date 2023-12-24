@@ -1,3 +1,1 @@
-<app-usercard [usercard]="usercard"></app-usercard>
-<app-usercard [usercard]="otherusercard"></app-usercard>
-<app-usercard [usercard]="thirdusercard"></app-usercard>
+<app-usercard *ngFor="let i of usercard " [usercard]="i"></app-usercard>
