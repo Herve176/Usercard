@@ -1,7 +1,7 @@
 <div class="usercard">
 <h1>{{ usercard.title }}</h1>
 <img [src]="usercard.image" alt="picture">
-<button (click)="tdescription()">Show details</button>
+<button (click)="tdescription()" id="det">{{Showdetails ? 'Hide detail' : 'Show detail'}}</button> <!--operation ternair-->
 <div *ngIf = "Showdetails">
     <p>{{ usercard.description }}</p>
 </div>

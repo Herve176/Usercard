@@ -1,6 +1,6 @@
 import { Component ,OnInit, Input } from '@angular/core';
 import { Usercard } from '../models/usercard.models';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-usercard',
@@ -19,6 +19,7 @@ ngOnInit(){}
 
 tdescription(){
   this.Showdetails = !this.Showdetails;
+
 }
 
 }
